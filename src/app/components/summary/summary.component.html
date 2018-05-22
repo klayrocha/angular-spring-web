@@ -1,0 +1,38 @@
+<div class="col-md-6" style="margin-left:0%">
+  <div [ngClass]="classCss" role="alert" *ngIf="message">
+    <strong>{{ message.text }}</strong>
+  </div>
+  <div class="box box-info">
+    <div class="box-header with-border">
+      <h3 class="box-title">Summary</h3>
+    </div>
+      <div class="box-body">
+        <ul class="list-group list-group-unbordered">
+          <li class="list-group-item">
+                <b>New :</b>  
+                <span class="pull-right"><span>{{ summary?.amountNew }}</span></span>
+          </li>
+          <li class="list-group-item">
+              <b>Resolved :</b>  
+              <span class="pull-right"><span>{{ summary?.amountResolved }}</span></span>
+          </li>
+          <li class="list-group-item">
+                <b>Approved :</b>  
+                <span class="pull-right"><span>{{ summary?.amountApproved }}</span></span>
+          </li>
+          <li class="list-group-item">
+                <b>Disapproved :</b>  
+                <span class="pull-right"><span>{{ summary?.amountDisapproved }}</span></span>
+          </li>
+          <li class="list-group-item">
+                <b>Assigned :</b>  
+                <span class="pull-right"><span>{{ summary?.amountAssigned }}</span></span>
+          </li>
+          <li class="list-group-item">
+                <b>Closed :</b>  
+          <span class="pull-right"><span>{{ summary?.amountClosed }}</span></span>
+          </li>
+        </ul>     
+      </div>
+  </div>
+</div>
